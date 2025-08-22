@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proofverse – Dark Dashboard (HTML)</title>
+  <!-- Tailwind CDN (no build step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-[#0b0c10] text-white antialiased">
+  <!-- subtle vignette background -->
+  <div class="pointer-events-none fixed inset-0 bg-[radial-gradient(80%_60%_at_20%_0%,rgba(124,58,237,0.08),transparent_60%),radial-gradient(60%_50%_at_90%_10%,rgba(96,165,250,0.06),transparent_55%)]"></div>
+
+  <main class="relative mx-auto max-w-7xl px-4 py-10">
+    <div class="grid grid-cols-1 gap-6 xl:grid-cols-12">
+      <!-- LEFT -->
+      <section class="xl:col-span-8 space-y-6">
+        <!-- HERO -->
+        <div class="rounded-3xl bg-[#0d0f14] ring-1 ring-white/5 p-7 md:p-10">
+          <div class="max-w-2xl">
+            <h1 class="text-3xl md:text-4xl font-semibold leading-tight text-zinc-50">
+              Your actions speak louder than words — Verify them on chain.
+            </h1>
+            <p class="mt-4 text-zinc-400 max-w-xl">
+              A decentralized future where what you’ve done speaks louder than who you say you are — powered
+            </p>
+            <button class="mt-6 rounded-xl bg-violet-600 px-5 py-3 text-sm font-semibold hover:bg-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-400">
+              Get Started
+            </button>
+          </div>
+
+          <!-- Trio cards -->
+          <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <!-- Card 1 -->
+            <div class="rounded-2xl bg-[#0d0e12] ring-1 ring-white/5 p-4">
+              <div class="mb-3 text-sm font-medium text-zinc-300">What is Proofverse?</div>
+              <div class="flex items-center gap-3 rounded-xl bg-black/20 p-3">
+                <svg viewBox="0 0 24 24" class="h-5 w-5 text-violet-400" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <div class="h-3 w-24 rounded bg-white/10"></div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="rounded-2xl bg-[#0d0e12] ring-1 ring-white/5 p-4">
+              <div class="mb-3 text-sm font-medium text-zinc-300">Why use it?</div>
+              <ul class="space-y-2 text-sm text-zinc-400">
+                <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-violet-500"></span> Reseive invaliation</li>
+                <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-violet-500"></span> Use weapon</li>
+              </ul>
+            </div>
+            <!-- Card 3 -->
+            <div class="rounded-2xl bg-[#0d0e12] ring-1 ring-white/5 p-4">
+              <div class="mb-3 text-sm font-medium text-zinc-300">How it works</div>
+              <div class="space-y-3">
+                <div class="flex items-center gap-3 rounded-xl bg-[#0f1014] ring-1 ring-white/5 px-3 py-2">
+                  <div class="grid h-8 w-8 place-items-center rounded-lg bg-violet-600/15 text-violet-400">
+                    <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+                  </div>
+                  <span class="text-sm text-zinc-300">Connect</span>
+                </div>
+                <div class="flex items-center gap-3 rounded-xl bg-[#0f1014] ring-1 ring-white/5 px-3 py-2">
+                  <div class="grid h-8 w-8 place-items-center rounded-lg bg-violet-600/15 text-violet-400">
+                    <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4 2.5 7-7-4-7 4 2.5-7L2 9h7z"/></svg>
+                  </div>
+                  <span class="text-sm text-zinc-300">Prove</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPLORE -->
+        <div class="rounded-3xl bg-[#0d0f14] ring-1 ring-white/5 p-6 md:p-8">
+          <h3 class="text-lg font-semibold mb-5 text-zinc-100">Explore</h3>
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-5">
+            <!-- Leaderboard -->
+            <div class="md:col-span-2 rounded-2xl bg-[#0b0d12] p-5 ring-1 ring-white/5">
+              <div class="mb-3 text-sm font-medium text-zinc-300">Leaderboard</div>
+              <div class="divide-y divide-white/5">
+                <div class="flex items-center justify-between py-2">
+                  <div class="flex items-center gap-3">
+                    <div class="h-7 w-7 rounded-full bg-white/10"></div>
+                    <span class="text-zinc-300">@alice</span>
+                  </div>
+                  <span class="text-zinc-400 text-sm">125</span>
+                </div>
+                <div class="flex items-center justify-between py-2">
+                  <div class="flex items-center gap-3">
+                    <div class="h-7 w-7 rounded-full bg-white/10"></div>
+                    <span class="text-zinc-300">@bob</span>
+                  </div>
+                  <span class="text-zinc-400 text-sm">118</span>
+                </div>
+                <div class="flex items-center justify-between py-2">
+                  <div class="flex items-center gap-3">
+                    <div class="h-7 w-7 rounded-full bg-white/10"></div>
+                    <span class="text-zinc-300">@carol</span>
+                  </div>
+                  <span class="text-zinc-400 text-sm">100</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Badges & Reputation -->
+            <div class="md:col-span-3 grid grid-cols-1 gap-6">
+              <div class="rounded-2xl bg-[#0b0d12] p-5 ring-1 ring-white/5">
+                <div class="mb-3 text-sm font-medium text-zinc-300">Trending Badges</div>
+                <div class="flex items-center gap-3">
+                  <div class="grid h-10 w-10 place-items-center rounded-xl bg-violet-600/15 text-violet-400">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>
+                  </div>
+                  <div class="grid h-10 w-10 place-items-center rounded-xl bg-violet-600/15 text-violet-400">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>
+                  </div>
+                  <div class="grid h-10 w-10 place-items-center rounded-xl bg-violet-600/15 text-violet-400">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>
+                  </div>
+                  <div class="grid h-10 w-10 place-items-center rounded-xl bg-violet-600/15 text-violet-400">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>
+                  </div>
+                  <div class="grid h-10 w-10 place-items-center rounded-xl bg-violet-600/15 text-violet-400">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="rounded-2xl bg-[#0b0d12] p-5 ring-1 ring-white/5">
+                <div class="text-sm text-zinc-300">Community Reputation</div>
+                <div class="mt-2 text-3xl font-semibold tracking-tight">32,564</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT -->
+      <aside class="xl:col-span-4 space-y-6">
+        <!-- Profile -->
+        <div class="rounded-3xl bg-[#0d0f14] ring-1 ring-white/5 p-6">
+          <div class="flex items-start gap-4">
+            <div class="h-12 w-12 rounded-full bg-white/10"></div>
+            <div class="flex-1">
+              <div class="text-sm text-zinc-300">0x2584…111d</div>
+              <div class="mt-1 text-xs text-zinc-500">Reputation</div>
+              <div class="mt-2 text-4xl font-semibold">75</div>
+              <button class="mt-4 w-full rounded-xl bg-violet-600 px-4 py-2 text-sm font-semibold hover:bg-violet-500">Add Proof</button>
+            </div>
+          </div>
+
+          <div class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <div class="flex items-center gap-3 rounded-xl bg-[#0f1014] ring-1 ring-white/5 px-3 py-2">
+              <div class="grid h-8 w-8 place-items-center rounded-lg bg-violet-600/15 text-violet-400">
+                <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <span class="text-sm text-zinc-300">Partipated in X DAC vofe</span>
+            </div>
+            <div class="flex items-center gap-3 rounded-xl bg-[#0f1014] ring-1 ring-white/5 px-3 py-2">
+              <div class="grid h-8 w-8 place-items-center rounded-lg bg-violet-600/15 text-violet-400">
+                <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M12 2l7 7-7 7-7-7 7-7z"/></svg>
+              </div>
+              <span class="text-sm text-zinc-300">Completed 10 Gifhult PRs</span>
+            </div>
+            <div class="col-span-1 sm:col-span-2">
+              <div class="flex items-center gap-3 rounded-xl bg-[#0f1014] ring-1 ring-white/5 px-3 py-2 opacity-60">
+                <div class="grid h-8 w-8 place-items-center rounded-lg bg-white/10"></div>
+                <span class="text-sm text-zinc-400">Suggested Proofs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Integrate -->
+        <div class="rounded-3xl bg-[#0d0f14] ring-1 ring-white/5 p-6">
+          <div class="text-xl font-semibold">Integrate Proofverse</div>
+          <p class="mt-2 text-sm text-zinc-400">
+            Use our API and SDKs to issue portable verifiable proofs
+          </p>
+          <button class="mt-5 rounded-xl bg-violet-600 px-4 py-2 text-sm font-semibold hover:bg-violet-500">Get Started</button>
+        </div>
+
+        <!-- Developer Integration -->
+        <div class="rounded-3xl bg-[#0d0f14] ring-1 ring-white/5 p-6">
+          <div class="text-xl font-semibold">Developer Integration</div>
+          <div class="mt-4 h-24 rounded-xl bg-[#0b0d12] ring-1 ring-white/5"></div>
+        </div>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
